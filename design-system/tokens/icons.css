@@ -1,0 +1,13 @@
+:root {
+  --icon-size-xs: 12px;
+  --icon-size-sm: 16px;
+  --icon-size-md: 16px;
+  --icon-size-lg: 24px;
+  --icon-size-xl: 32px;
+  --icon-size-2xl: 48px;
+  --icon-stroke-thin: 1;
+  --icon-stroke-light: 1.25;
+  --icon-stroke-regular: 1.5;
+  --icon-stroke-bold: 2;
+  --icon-stroke-heavy: 2.5;
+}
