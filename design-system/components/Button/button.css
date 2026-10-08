@@ -1,0 +1,120 @@
+/* Button — generado por DSN desde el preview del componente. */
+
+:root {
+  --button-bg: var(--surface-accent, #2269db);
+  --button-text: var(--content-inverse, #f0f5ff);
+  --button-border: var(--border-info, #2269db);
+  --button-radius: var(--radius-control, 8px);
+  --button-padding-x: var(--md, 8px);
+  --button-padding-y: var(--sm, 4px);
+  --button-gap: var(--xs, 1px);
+  --button-typography-font-family: Inter;
+  --button-typography-font-size: 13px;
+  --button-typography-font-weight: 600;
+  --button-typography-line-height: 1.25;
+  --button-typography-letter-spacing: 0.01em;
+  --button-shadow: var(--shadow-raised, 0px 1px 2px 0px rgba(0, 0, 0, 0.02));
+  --button-focus-ring: var(--border-focus, #2269db);
+}
+
+[data-theme="dark"] {
+  --button-bg: var(--surface-accent, #6aa2ff);
+  --button-text: var(--content-inverse, #03050e);
+  --button-border: var(--border-info, #6aa2ff);
+  --button-radius: var(--radius-control, 8px);
+  --button-padding-x: var(--md, 8px);
+  --button-padding-y: var(--sm, 4px);
+  --button-gap: var(--xs, 1px);
+  --button-shadow: var(--shadow-raised, 0px 1px 2px 0px rgba(0, 0, 0, 0.02));
+  --button-focus-ring: var(--border-focus, #6aa2ff);
+}
+
+.button .button__leading {
+  display: inline-flex;
+}
+
+.button .button__trailing {
+  display: inline-flex;
+}
+
+.button {
+  margin: 0;
+  border: 0 solid;
+  background: var(--button-bg);
+  font: inherit;
+  color: var(--button-text);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--button-gap);
+  border-width: medium;
+  border-style: none;
+  border-color: currentcolor;
+  border-image: none;
+  border-radius: var(--button-radius);
+  padding-inline: var(--button-padding-x);
+  padding-block: var(--button-padding-y);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
+  opacity: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.12s;
+  font-family: var(--button-typography-font-family), system-ui, sans-serif;
+  font-weight: var(--button-typography-font-weight);
+  font-size: var(--button-typography-font-size);
+  line-height: var(--button-typography-line-height);
+  letter-spacing: var(--button-typography-letter-spacing);
+}
+
+.button[data-size="sm"] {
+  --button-padding-x: var(--sm, 4px);
+  --button-padding-y: var(--xs, 1px);
+}
+
+.button[data-size="lg"] {
+  --button-padding-x: var(--lg, 16px);
+  --button-padding-y: var(--md, 8px);
+  --button-gap: var(--sm, 4px);
+}
+
+.button[data-variant="outline"] {
+  background: transparent;
+  color: var(--button-bg);
+  border: 1px solid var(--button-border);
+}
+
+.button[data-variant="ghost"] {
+  background: transparent;
+  color: var(--button-bg);
+}
+
+.button[data-icon="only"] {
+  justify-content: center;
+  gap: 0px;
+  padding-inline: var(--button-padding-y);
+}
+
+.button:hover {
+  background: rgb(31, 97, 201);
+}
+
+.button:active {
+  background: rgb(29, 88, 184);
+}
+
+.button:focus-visible {
+  outline: var(--button-focus-ring) solid 2px;
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+[data-theme="dark"] .button:hover {
+  background: rgb(118, 169, 255);
+}
+
+[data-theme="dark"] .button:active {
+  background: rgb(130, 177, 255);
+}
